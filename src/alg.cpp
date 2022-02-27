@@ -39,7 +39,7 @@ while (count > 0) {
   value = value + calcItem(x, count);
   count = count - 1;
 }
-  return value;
+  return value + 1;
 }
 
 double sinn(double x, uint16_t count) {
