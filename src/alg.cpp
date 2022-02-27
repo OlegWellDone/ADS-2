@@ -37,6 +37,7 @@ double expn(double x, uint16_t count) {
 double value = 0;
 while (count > 0) {
   value = value + calcItem(x, count);
+  count = count - 1;
 }
   return value;
 }
