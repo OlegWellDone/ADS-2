@@ -18,9 +18,14 @@ for (uint64_t i = 1; i < n; i++) {
 
 uint64_t fact(uint16_t n) {
   uint64_t factor = 1;
+  if (n == 0) {
+    factor = 1;
+  }
+  if (n != 0) {
 for (uint64_t i = 1; i <= n; i++) {
   factor = factor * i;
 }
+  }
   return factor;
 }
 
@@ -30,7 +35,7 @@ return (pown(x, n) / fact(n));
 
 double expn(double x, uint16_t count) {
 double value = 0;
-for (uint64_t i = 1; i < count; i++) {
+for (uint64_t i = 0; i < count; i++) {
   value = value + calcItem(x, i);
 }
   return value;
